@@ -1,0 +1,16 @@
+<div class="container">
+      <legend>Create Item</legend>
+      <div class="mb-3">
+            <label for="name" class="form-label">Enter Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="fruitFrom.name">
+      </div>
+      <div class="mb-3">
+            <label for="quantity" class="form-label">Enter Quantity</label>
+            <input type="number" class="form-control" id="quantity" [(ngModel)]="fruitFrom.quantity">
+      </div>
+      <div class="mb-3">
+            <label for="price" class="form-label">Enter Price</label>
+            <input type="number" class="form-control" id="price" [(ngModel)]="fruitFrom.price">
+      </div>
+      <button class="btn btn-primary" (click)="create()">Create</button>
+</div>

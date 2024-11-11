@@ -16,11 +16,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.allFruits$ = this.apollo
-      .watchQuery<{ allFruits: Fruits[] }>({ query: GET_Fruits })
+      .watchQuery<{ allFruits: Fruits[] }>({ query: GET_Fruits }) // query: GET_Fruits, fetchPolicy: 'no-cache'
       .valueChanges.pipe(map((res) => res.data.allFruits))
-    console.log('allFruits$:', this.allFruits$);;
-
-
+    console.log('allFruits$:', this.allFruits$);
   }
 
 }
