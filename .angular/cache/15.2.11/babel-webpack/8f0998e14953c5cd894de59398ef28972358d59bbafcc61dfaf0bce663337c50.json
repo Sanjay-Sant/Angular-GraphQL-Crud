@@ -1,1 +1,0 @@
-{"ast":null,"code":"export var version = \"3.11.8\";","map":{"version":3,"names":["version"],"sources":["/home/user/NeoSOFT/GraphQL/node_modules/@apollo/client/version.js"],"sourcesContent":["export var version = \"3.11.8\";\n"],"mappings":"AAAA,OAAO,IAAIA,OAAO,GAAG,QAAQ","ignoreList":[]},"metadata":{},"sourceType":"module","externalDependencies":[]}
