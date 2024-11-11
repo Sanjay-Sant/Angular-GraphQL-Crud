@@ -7,4 +7,14 @@ export const GET_Fruits = gql`query{
     quantity
     price
   }
-}`
+}`;
+
+export const Fruits_ById = gql`
+query($fruitFilter:FruitFilter){
+  allFruits(filter:$fruitFilter){
+    id
+    name
+    quantity
+    price
+  }
+}`;

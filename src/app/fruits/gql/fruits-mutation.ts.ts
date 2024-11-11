@@ -8,4 +8,14 @@ mutation($name:String!, $quantity: Int!, $price:Int!  ){
     quantity
     price
   }
-}` 
+}`;
+
+export const UPDATE_Fruits = gql`
+mutation($id:ID!, $name:String!, $quantity:Int!, $price:Int!){
+  updateFruit(id:$id, name:$name, quantity:$quantity, price:$price){
+    id
+    name
+    quantity
+    price
+  }
+}`;
