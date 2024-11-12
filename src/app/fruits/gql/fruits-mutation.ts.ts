@@ -19,3 +19,13 @@ mutation($id:ID!, $name:String!, $quantity:Int!, $price:Int!){
     price
   }
 }`;
+
+export const DELETE_Fruit = gql`
+mutation($id:ID!){
+  removeFruit(id:$id){
+    id
+    name
+    quantity
+    price
+  }
+}`

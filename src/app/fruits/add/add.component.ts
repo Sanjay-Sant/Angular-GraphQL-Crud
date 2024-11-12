@@ -51,7 +51,7 @@ export class AddComponent implements OnInit {
       console.log('create res:', data);
       this.router.navigate(["/"]);
 
-    }))
+    }));
   }
 
 }

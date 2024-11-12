@@ -4,7 +4,7 @@ module.exports = {
                   id: 1,
                   name: 'Mango',
                   quantity: 3,
-                  price: 100,
+                  price: 200,
             }
       ]
 }
