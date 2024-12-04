@@ -48,7 +48,6 @@ export class HomeComponent implements OnInit {
 
             if (allData && allData.allFruits.length > 0) {
               let newData: Fruits[] = [...allData.allFruits];
-              // newData.unshift(data.removeFruit);
               newData = newData.filter(_ => _.id !== data.removeFruit.id)
 
               store.writeQuery<{ allFruits: Fruits[] }>({

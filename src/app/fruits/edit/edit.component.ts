@@ -59,22 +59,22 @@ export class EditComponent implements OnInit {
           quantity: this.fruitFrom.quantity,
           price: this.fruitFrom.price
         },
-        update: (store, { data }) => {
-          if (data?.updateFruit) {
-            var allData = store.readQuery<{ allFruits: Fruits[] }>({ query: GET_Fruits });
+        // update: (store, { data }) => {
+        //   if (data?.updateFruit) {
+        //     var allData = store.readQuery<{ allFruits: Fruits[] }>({ query: GET_Fruits });
 
-            if (allData && allData.allFruits.length > 0) {
-              var newData: Fruits[] = [...allData.allFruits];
-              newData = newData.filter(_ => _.id !== data.updateFruit.id)
-              newData.unshift(data.updateFruit);
+        //     if (allData && allData.allFruits.length > 0) {
+        //       var newData: Fruits[] = [...allData.allFruits];
+        //       newData = newData.filter(_ => _.id !== data.updateFruit.id)
+        //       newData.push(data.updateFruit);
 
-              store.writeQuery<{ allFruits: Fruits[] }>({
-                query: GET_Fruits,
-                data: { allFruits: newData }
-              })
-            }
-          }
-        }
+        //       store.writeQuery<{ allFruits: Fruits[] }>({
+        //         query: GET_Fruits,
+        //         data: { allFruits: newData }
+        //       })
+        //     }
+        //   }
+        // }
       }
     ).subscribe((data => {
       console.log('create res:', data);

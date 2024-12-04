@@ -1,6 +1,6 @@
 <div class="container">
       <div class="row mt-2">
-            <div class="col col-md-4 offset-md-4">
+            <div class="col col-md-12 d-flex justify-content-end py-4">
                   <a class="btn btn-primary" [routerLink]="['/add']">Create A New Item</a>
             </div>
       </div>
@@ -21,7 +21,8 @@
                         <td> {{item.quantity}}</td>
                         <td>{{item.price}}</td>
                         <td>
-                              <a class="btn btn-outline-primary" [routerLink]="['edit', item.id]">Edit</a> | 
+                              <a class="btn btn-outline-primary" [routerLink]="['edit', item.id]">Edit</a> 
+                              <span class="px-2"> | </span> 
                               <button class="btn btn-danger" (click)="openConfirmationModal(item.id)">Delete</button>
                         </td>
                   </tr>

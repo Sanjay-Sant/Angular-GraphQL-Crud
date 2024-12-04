@@ -37,7 +37,7 @@ export class AddComponent implements OnInit {
 
             if (allData && allData.allFruits.length > 0) {
               var newData: Fruits[] = [...allData.allFruits];
-              newData.unshift(data.createFruit);
+              newData.push(data.createFruit);
 
               store.writeQuery<{ allFruits: Fruits[] }>({
                 query: GET_Fruits,
