@@ -9,13 +9,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 front-end -> ng serve
 db file -> npm run gql-server
 
+# Run the Fontend Project and json-graphql-server & db.js file
+ng serve
+npm run gql-server -> ("gql-server":"json-graphql-server db.js", // set in package.json file) 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-# Run the Fontend Project and json-graphql-server & db.js file
-ng serve
-npm run gql-server -> ("gql-server":"json-graphql-server db.js", // set in package.json file) 
 
 ## Code scaffolding
 
